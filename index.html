@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor Game</title>
-    <script src="apps.js"></script>
+    <script src="apps.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Rock Paper Scissors Game</h1>
+    
+    <button id="rockBtn" onclick="playRound('rock')">🚀</button>
+    <button id="paperBtn" onclick="playRound('paper')">📃</button>
+    <button id="scissorBtn" onclick="playRound('scissor')">✂️</button>
+
+    <div id="resultsContainer">
+        <div id="humanPick">Player Choice:</div>
+        <div id="computerChoice">Computer Choice:</div>
+        <div id="humanResult"></div>
+        
+        <div id="humanScoreaParagraph">Player Score:</div>
+        <div id="computerScoreParagraph">Computer Score:</div>
+        <div id="winner"></div>
     
 
+    </div>
+    
 </body>
 </html>
