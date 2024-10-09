@@ -19,18 +19,19 @@ function getHumanChoice(){
 function playGame(){
     let humanScore = 0;
     let computerScore = 0;
+    let humanChoiceLower;
 
     function playRound(humanChoice, computerChoice){
-        humanChoice = humanChoice.toLowerCase();
-        if (humanChoice == computerChoice) {
+        humanChoiceLower = humanChoice.toLowerCase()
+        if (humanChoiceLower == computerChoice) {
             return 'tie'
-        } else if ((humanChoice == 'scissor' && computerChoice == 'paper') || (humanChoice == 'paper' && computerChoice == 'rock') || (humanChoice == 'rock' && computerChoice == 'scissor')){
+        } else if ((humanChoiceLower == 'scissor' && computerChoice == 'paper') || (humanChoice == 'paper' && computerChoice == 'rock') || (humanChoice == 'rock' && computerChoice == 'scissor')){
             humanScore += 1
-            console.log(humanChoice + computerChoice)
+            console.log(humanChoiceLower + computerChoice)
             return 'You win'
         } else {
             computerScore += 1
-            console.log(humanChoice + computerChoice)
+            console.log(humanChoiceLower + computerChoice)
             return 'You lose'
         }
     }
@@ -41,8 +42,8 @@ function playGame(){
     const computerSelection = getComputerChoice();
     let play = playRound(humanSelection, computerSelection);
     console.log(play)
-    console.log(humanScore)
-    console.log(computerScore)
+    console.log(`Player Scorce: ${humanScore}`)
+    console.log(`Computer Scorce: ${computerScore}`)
     }
 }
 
