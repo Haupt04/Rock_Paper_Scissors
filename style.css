@@ -1,0 +1,35 @@
+
+body{
+    display:block;
+    margin: auto;
+    text-align: center;
+ 
+}
+
+
+
+
+button {
+    border-radius: 50%;
+    font-size: 7rem;
+    padding:10px;
+    background-color: aqua;
+    gap: 60px;
+    margin-bottom: 30px;
+    margin-left: 30px;'
+    
+
+}
+
+
+h1{
+    border: 2px solid black;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#resultsContainer{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+}
