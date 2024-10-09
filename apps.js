@@ -24,14 +24,16 @@ function playGame(){
     function playRound(humanChoice, computerChoice){
         humanChoiceLower = humanChoice.toLowerCase()
         if (humanChoiceLower == computerChoice) {
-            return 'tie'
+            return 'Tie'
         } else if ((humanChoiceLower == 'scissor' && computerChoice == 'paper') || (humanChoice == 'paper' && computerChoice == 'rock') || (humanChoice == 'rock' && computerChoice == 'scissor')){
             humanScore += 1
-            console.log(humanChoiceLower + computerChoice)
+            console.log(`Player Choice: ${humanChoiceLower}`)
+            console.log(`Computer Choice: ${computerChoice}`)
             return 'You win'
         } else {
             computerScore += 1
-            console.log(humanChoiceLower + computerChoice)
+            console.log(`Player Choice: ${humanChoiceLower}`)
+            console.log(`Computer Choice: ${computerChoice}`)
             return 'You lose'
         }
     }
